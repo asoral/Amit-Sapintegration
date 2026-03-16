@@ -1,0 +1,540 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-16 15:16:11.656025",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_g1cv",
+  "s_vkorg",
+  "s_fkdat",
+  "fkart",
+  "bukrs",
+  "spart",
+  "werks",
+  "prctr",
+  "aubel",
+  "xblnr",
+  "audat",
+  "column_break_ztnw",
+  "vtweg",
+  "dis_name",
+  "con",
+  "con_qty",
+  "vbeln",
+  "fkdat",
+  "section_break_kgyr",
+  "vgbel",
+  "del_date",
+  "zuonr",
+  "ref_odn",
+  "kunag",
+  "sp_name",
+  "sh_code",
+  "sh_name",
+  "fkimg",
+  "matnr",
+  "arktx",
+  "column_break_vpsl",
+  "rate",
+  "sgst_p",
+  "cgst_p",
+  "igst_p",
+  "tax_amt",
+  "sgst",
+  "cgst",
+  "igst",
+  "jtc1_amt",
+  "jtc2_amt",
+  "tcs",
+  "round",
+  "inv_amt",
+  "section_break_yiwr",
+  "zterm_t",
+  "alifnr",
+  "aname",
+  "bztxt",
+  "zzveh_reg_no",
+  "steuc",
+  "gstin",
+  "meins",
+  "base_amt",
+  "tcs_base_amt",
+  "column_break_ypir",
+  "sal_emp_code",
+  "sal_emp_name",
+  "cust_pri_g",
+  "inco1",
+  "inco2_l",
+  "cust_reco_ac",
+  "posnr",
+  "gjahr",
+  "waerk",
+  "matkl",
+  "so_qty",
+  "bstnk",
+  "dis_per",
+  "dis_amt",
+  "section_break_vcgf",
+  "zterm",
+  "sh_city",
+  "sh_gst_no",
+  "shp_reg",
+  "shp_reg_name",
+  "erdat1",
+  "aname1",
+  "column_break_mrwe",
+  "amended_from",
+  "state_name1",
+  "state_name",
+  "city_name",
+  "prsdt"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_g1cv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "s_vkorg",
+   "fieldtype": "Data",
+   "label": "Sales Organization"
+  },
+  {
+   "fieldname": "s_fkdat",
+   "fieldtype": "Date",
+   "label": "Billing Date"
+  },
+  {
+   "fieldname": "bukrs",
+   "fieldtype": "Data",
+   "label": "Company Code"
+  },
+  {
+   "fieldname": "fkart",
+   "fieldtype": "Data",
+   "label": "Invoice Document Type"
+  },
+  {
+   "fieldname": "vtweg",
+   "fieldtype": "Data",
+   "label": "Distribution Channel"
+  },
+  {
+   "fieldname": "dis_name",
+   "fieldtype": "Data",
+   "label": "Distribution Channel Name"
+  },
+  {
+   "fieldname": "spart",
+   "fieldtype": "Data",
+   "label": "Division"
+  },
+  {
+   "fieldname": "werks",
+   "fieldtype": "Data",
+   "label": "Plant Code"
+  },
+  {
+   "fieldname": "prctr",
+   "fieldtype": "Data",
+   "label": "Profit Center"
+  },
+  {
+   "fieldname": "xblnr",
+   "fieldtype": "Data",
+   "label": "ODN No"
+  },
+  {
+   "fieldname": "vbeln",
+   "fieldtype": "Data",
+   "label": "Invoice Number"
+  },
+  {
+   "fieldname": "fkdat",
+   "fieldtype": "Date",
+   "label": "Invoice Date"
+  },
+  {
+   "fieldname": "con",
+   "fieldtype": "Data",
+   "label": "Contract (Sauda) No"
+  },
+  {
+   "fieldname": "con_qty",
+   "fieldtype": "Int",
+   "label": "Contract (Sauda) Qty"
+  },
+  {
+   "fieldname": "aubel",
+   "fieldtype": "Data",
+   "label": "Sales Order No"
+  },
+  {
+   "fieldname": "audat",
+   "fieldtype": "Date",
+   "label": "Sales Order Date"
+  },
+  {
+   "fieldname": "column_break_ztnw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_kgyr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "vgbel",
+   "fieldtype": "Data",
+   "label": "Delivery No"
+  },
+  {
+   "fieldname": "del_date",
+   "fieldtype": "Date",
+   "label": "Delivery Date"
+  },
+  {
+   "fieldname": "zuonr",
+   "fieldtype": "Data",
+   "label": "Ref Inv No"
+  },
+  {
+   "fieldname": "ref_odn",
+   "fieldtype": "Data",
+   "label": "Ref Inv ODN No"
+  },
+  {
+   "fieldname": "kunag",
+   "fieldtype": "Data",
+   "label": "Sold-to-Party Code"
+  },
+  {
+   "fieldname": "sp_name",
+   "fieldtype": "Data",
+   "label": "Sold-to-Party Name"
+  },
+  {
+   "fieldname": "sh_code",
+   "fieldtype": "Data",
+   "label": "Ship-to-Party Code"
+  },
+  {
+   "fieldname": "sh_name",
+   "fieldtype": "Data",
+   "label": "Ship-to-Party Name"
+  },
+  {
+   "fieldname": "fkimg",
+   "fieldtype": "Data",
+   "label": "Invoice Quantity"
+  },
+  {
+   "fieldname": "matnr",
+   "fieldtype": "Data",
+   "label": "Material Code"
+  },
+  {
+   "fieldname": "column_break_vpsl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "arktx",
+   "fieldtype": "Data",
+   "label": "Material Description"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Int",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "sgst_p",
+   "fieldtype": "Percent",
+   "label": "SGST %"
+  },
+  {
+   "fieldname": "cgst_p",
+   "fieldtype": "Percent",
+   "label": "CGST %"
+  },
+  {
+   "fieldname": "igst_p",
+   "fieldtype": "Percent",
+   "label": "IGST %"
+  },
+  {
+   "fieldname": "tax_amt",
+   "fieldtype": "Currency",
+   "label": "Taxable Amount"
+  },
+  {
+   "fieldname": "sgst",
+   "fieldtype": "Currency",
+   "label": "SGST Amount"
+  },
+  {
+   "fieldname": "cgst",
+   "fieldtype": "Currency",
+   "label": "CGST Amount"
+  },
+  {
+   "fieldname": "igst",
+   "fieldtype": "Currency",
+   "label": "IGST Amount"
+  },
+  {
+   "fieldname": "jtc1_amt",
+   "fieldtype": "Currency",
+   "label": "JTC1 Amount"
+  },
+  {
+   "fieldname": "jtc2_amt",
+   "fieldtype": "Currency",
+   "label": "JTC2 Amount"
+  },
+  {
+   "fieldname": "tcs",
+   "fieldtype": "Currency",
+   "label": "TCS Amount"
+  },
+  {
+   "fieldname": "round",
+   "fieldtype": "Currency",
+   "label": "Round Off Amount"
+  },
+  {
+   "fieldname": "inv_amt",
+   "fieldtype": "Currency",
+   "label": "Invoice Amount"
+  },
+  {
+   "fieldname": "section_break_yiwr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "zterm_t",
+   "fieldtype": "Small Text",
+   "label": "Payment Term Description"
+  },
+  {
+   "fieldname": "alifnr",
+   "fieldtype": "Data",
+   "label": "Commission Agent"
+  },
+  {
+   "fieldname": "aname",
+   "fieldtype": "Data",
+   "label": "Commission Agt Name"
+  },
+  {
+   "fieldname": "bztxt",
+   "fieldtype": "Data",
+   "label": "Sales District"
+  },
+  {
+   "fieldname": "zzveh_reg_no",
+   "fieldtype": "Data",
+   "label": "Truck No"
+  },
+  {
+   "fieldname": "steuc",
+   "fieldtype": "Data",
+   "label": "HSN Code"
+  },
+  {
+   "fieldname": "gstin",
+   "fieldtype": "Data",
+   "label": "GSTIN"
+  },
+  {
+   "fieldname": "meins",
+   "fieldtype": "Data",
+   "label": "UOM"
+  },
+  {
+   "fieldname": "base_amt",
+   "fieldtype": "Currency",
+   "label": "Base Amount"
+  },
+  {
+   "fieldname": "tcs_base_amt",
+   "fieldtype": "Data",
+   "label": "TCS Base Amount"
+  },
+  {
+   "fieldname": "column_break_ypir",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sal_emp_code",
+   "fieldtype": "Data",
+   "label": "Sales Employee Code"
+  },
+  {
+   "fieldname": "sal_emp_name",
+   "fieldtype": "Data",
+   "label": "Sales Employee Name"
+  },
+  {
+   "fieldname": "cust_pri_g",
+   "fieldtype": "Data",
+   "label": "Customer Price Group"
+  },
+  {
+   "fieldname": "inco1",
+   "fieldtype": "Data",
+   "label": "INCOTERMS"
+  },
+  {
+   "fieldname": "inco2_l",
+   "fieldtype": "Data",
+   "label": "INCOTERMS LOCATION 1"
+  },
+  {
+   "fieldname": "cust_reco_ac",
+   "fieldtype": "Data",
+   "label": "Customer Reco A/c"
+  },
+  {
+   "fieldname": "posnr",
+   "fieldtype": "Data",
+   "label": "Line Item Number"
+  },
+  {
+   "fieldname": "gjahr",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "fieldname": "waerk",
+   "fieldtype": "Currency",
+   "label": "Currency"
+  },
+  {
+   "fieldname": "matkl",
+   "fieldtype": "Data",
+   "label": "Material Group"
+  },
+  {
+   "fieldname": "so_qty",
+   "fieldtype": "Int",
+   "label": "Sales Order Qty"
+  },
+  {
+   "fieldname": "bstnk",
+   "fieldtype": "Data",
+   "label": "Customer PO No"
+  },
+  {
+   "fieldname": "dis_per",
+   "fieldtype": "Percent",
+   "label": "Discount %"
+  },
+  {
+   "fieldname": "dis_amt",
+   "fieldtype": "Currency",
+   "label": "Discount Amount"
+  },
+  {
+   "fieldname": "section_break_vcgf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_mrwe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "zterm",
+   "fieldtype": "Data",
+   "label": "Payment Term"
+  },
+  {
+   "fieldname": "sh_city",
+   "fieldtype": "Data",
+   "label": "SH City"
+  },
+  {
+   "fieldname": "sh_gst_no",
+   "fieldtype": "Data",
+   "label": "SH GST No"
+  },
+  {
+   "fieldname": "shp_reg",
+   "fieldtype": "Data",
+   "label": "SHP Reg"
+  },
+  {
+   "fieldname": "shp_reg_name",
+   "fieldtype": "Data",
+   "label": "SHP Reg Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SAP Data",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "erdat1",
+   "fieldtype": "Data",
+   "label": "Sales Order Created On"
+  },
+  {
+   "fieldname": "aname1",
+   "fieldtype": "Data",
+   "label": "Del-Credere Agent"
+  },
+  {
+   "fieldname": "state_name1",
+   "fieldtype": "Data",
+   "label": "State Name"
+  },
+  {
+   "fieldname": "state_name",
+   "fieldtype": "Data",
+   "label": "State Code"
+  },
+  {
+   "fieldname": "city_name",
+   "fieldtype": "Data",
+   "label": "City Name"
+  },
+  {
+   "fieldname": "prsdt",
+   "fieldtype": "Date",
+   "label": "Pricing Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-16 16:04:06.470521",
+ "modified_by": "Administrator",
+ "module": "SAP App",
+ "name": "SAP Data",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

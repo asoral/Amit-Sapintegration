@@ -150,7 +150,7 @@ app_license = "mit"
 
 # scheduler_events = {
 # 	"all": [
-# 		"sap_app.tasks.all"
+# 		"sap_app.sap_app.doctype.sap_integration_settings.sap_integration_settings.generate_sap_token"
 # 	],
 # 	"daily": [
 # 		"sap_app.tasks.daily"
