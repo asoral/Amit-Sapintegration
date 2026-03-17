@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class SAPData(Document):
+class SAPSalesRegister(Document):
 	pass

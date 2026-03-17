@@ -1,13 +1,13 @@
 {
  "actions": [],
- "allow_rename": 1,
+ "autoname": "autoincrement",
  "creation": "2026-03-16 15:16:11.656025",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "section_break_g1cv",
-  "s_vkorg",
-  "s_fkdat",
+  "svkorg",
+  "sfkdat",
   "fkart",
   "bukrs",
   "spart",
@@ -18,9 +18,9 @@
   "audat",
   "column_break_ztnw",
   "vtweg",
-  "dis_name",
+  "disname",
   "con",
-  "con_qty",
+  "conqty",
   "vbeln",
   "fkdat",
   "section_break_kgyr",
@@ -96,16 +96,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "s_vkorg",
-   "fieldtype": "Data",
-   "label": "Sales Organization"
-  },
-  {
-   "fieldname": "s_fkdat",
-   "fieldtype": "Date",
-   "label": "Billing Date"
-  },
-  {
    "fieldname": "bukrs",
    "fieldtype": "Data",
    "label": "Company Code"
@@ -119,11 +109,6 @@
    "fieldname": "vtweg",
    "fieldtype": "Data",
    "label": "Distribution Channel"
-  },
-  {
-   "fieldname": "dis_name",
-   "fieldtype": "Data",
-   "label": "Distribution Channel Name"
   },
   {
    "fieldname": "spart",
@@ -159,11 +144,6 @@
    "fieldname": "con",
    "fieldtype": "Data",
    "label": "Contract (Sauda) No"
-  },
-  {
-   "fieldname": "con_qty",
-   "fieldtype": "Int",
-   "label": "Contract (Sauda) Qty"
   },
   {
    "fieldname": "aubel",
@@ -473,7 +453,7 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "SAP Data",
+   "options": "SAP Sales Register",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
@@ -507,16 +487,37 @@
    "fieldname": "prsdt",
    "fieldtype": "Date",
    "label": "Pricing Date"
+  },
+  {
+   "fieldname": "svkorg",
+   "fieldtype": "Data",
+   "label": "Sales Organization"
+  },
+  {
+   "fieldname": "sfkdat",
+   "fieldtype": "Date",
+   "label": "Billing Date"
+  },
+  {
+   "fieldname": "disname",
+   "fieldtype": "Data",
+   "label": "Distribution Channel Name"
+  },
+  {
+   "fieldname": "conqty",
+   "fieldtype": "Int",
+   "label": "Contract (Sauda) Qty"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-03-16 16:04:06.470521",
+ "modified": "2026-03-17 15:14:02.479079",
  "modified_by": "Administrator",
  "module": "SAP App",
- "name": "SAP Data",
+ "name": "SAP Sales Register",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {
