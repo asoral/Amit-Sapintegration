@@ -147,13 +147,14 @@ app_license = "mit"
 
 # Scheduled Tasks
 # ---------------
-
+# test
 scheduler_events = {
 
      "cron": {
 		"0 0 * * *": [
 			"sap_app.sap_app.doctype.sap_integration_settings.sap_integration_settings.run_sap_sync"
 		]
+
 	}
 # 	"all": [
 # 		"sap_app.sap_app.doctype.sap_integration_settings.sap_integration_settings.generate_sap_token"
