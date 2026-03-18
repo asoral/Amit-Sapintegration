@@ -101,6 +101,14 @@ class SAPIntegrationSettings(Document):
 
 		return records
 
-	def run_sap_sync():
-		doc = frappe.get_single("SAP Integration Settings")
-		doc.process_sap_data()
+
+
+def run_sap_sync():
+	doc = frappe.get_single("SAP Integration Settings")
+
+	# optional check
+	if not doc.enable:
+		frappe.logger().info("SAP Sync skipped: Enable is OFF")
+		return
+
+	doc.process_sap_data()
