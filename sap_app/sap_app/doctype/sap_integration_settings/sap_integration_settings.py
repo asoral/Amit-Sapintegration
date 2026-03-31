@@ -136,7 +136,7 @@ class SAPIntegrationSettings(Document):
 
 		frappe.logger().info(f"From: {date_str1}, To: {date_str2}")
 
-		base_url = "https://s4hana2.amitmetaliks.com:1043/sap/opu/odata/sap/ZMIS_DO_SRV/ES_SALREG001Set"
+		base_url = "https://s4hana1.amitmetaliks.com:1043/sap/opu/odata/sap/ZMIS_DO_SRV/ES_SALREG001Set"
 
 		url = (
 			f"{base_url}?"
