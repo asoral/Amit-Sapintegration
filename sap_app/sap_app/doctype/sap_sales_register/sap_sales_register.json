@@ -98,62 +98,74 @@
   {
    "fieldname": "bukrs",
    "fieldtype": "Data",
-   "label": "Company Code"
+   "label": "Company Code",
+   "read_only": 1
   },
   {
    "fieldname": "fkart",
    "fieldtype": "Data",
-   "label": "Invoice Document Type"
+   "label": "Invoice Document Type",
+   "read_only": 1
   },
   {
    "fieldname": "vtweg",
    "fieldtype": "Data",
-   "label": "Distribution Channel"
+   "label": "Distribution Channel",
+   "read_only": 1
   },
   {
    "fieldname": "spart",
    "fieldtype": "Data",
-   "label": "Division"
+   "label": "Division",
+   "read_only": 1
   },
   {
    "fieldname": "werks",
    "fieldtype": "Data",
-   "label": "Plant Code"
+   "label": "Plant Code",
+   "read_only": 1
   },
   {
    "fieldname": "prctr",
    "fieldtype": "Data",
-   "label": "Profit Center"
+   "label": "Profit Center",
+   "read_only": 1
   },
   {
    "fieldname": "xblnr",
    "fieldtype": "Data",
-   "label": "ODN No"
+   "label": "ODN No",
+   "read_only": 1
   },
   {
    "fieldname": "vbeln",
    "fieldtype": "Data",
-   "label": "Invoice Number"
+   "label": "Invoice Number",
+   "read_only": 1
   },
   {
    "fieldname": "fkdat",
    "fieldtype": "Date",
-   "label": "Invoice Date"
+   "label": "Invoice Date",
+   "read_only": 1
   },
   {
    "fieldname": "con",
    "fieldtype": "Data",
-   "label": "Contract (Sauda) No"
+   "label": "Contract (Sauda) No",
+   "read_only": 1
   },
   {
    "fieldname": "aubel",
    "fieldtype": "Data",
-   "label": "Sales Order No"
+   "label": "Sales Order No",
+   "read_only": 1
   },
   {
    "fieldname": "audat",
    "fieldtype": "Date",
-   "label": "Sales Order Date"
+   "label": "Sales Order Date",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_ztnw",
@@ -166,52 +178,62 @@
   {
    "fieldname": "vgbel",
    "fieldtype": "Data",
-   "label": "Delivery No"
+   "label": "Delivery No",
+   "read_only": 1
   },
   {
    "fieldname": "del_date",
    "fieldtype": "Date",
-   "label": "Delivery Date"
+   "label": "Delivery Date",
+   "read_only": 1
   },
   {
    "fieldname": "zuonr",
    "fieldtype": "Data",
-   "label": "Ref Inv No"
+   "label": "Ref Inv No",
+   "read_only": 1
   },
   {
    "fieldname": "ref_odn",
    "fieldtype": "Data",
-   "label": "Ref Inv ODN No"
+   "label": "Ref Inv ODN No",
+   "read_only": 1
   },
   {
    "fieldname": "kunag",
    "fieldtype": "Data",
-   "label": "Sold-to-Party Code"
+   "label": "Sold-to-Party Code",
+   "read_only": 1
   },
   {
    "fieldname": "sp_name",
    "fieldtype": "Data",
-   "label": "Sold-to-Party Name"
+   "label": "Sold-to-Party Name",
+   "read_only": 1
   },
   {
    "fieldname": "sh_code",
    "fieldtype": "Data",
-   "label": "Ship-to-Party Code"
+   "label": "Ship-to-Party Code",
+   "read_only": 1
   },
   {
    "fieldname": "sh_name",
    "fieldtype": "Data",
-   "label": "Ship-to-Party Name"
+   "label": "Ship-to-Party Name",
+   "read_only": 1
   },
   {
    "fieldname": "fkimg",
    "fieldtype": "Data",
-   "label": "Invoice Quantity"
+   "label": "Invoice Quantity",
+   "read_only": 1
   },
   {
    "fieldname": "matnr",
    "fieldtype": "Data",
-   "label": "Material Code"
+   "label": "Material Code",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_vpsl",
@@ -220,72 +242,86 @@
   {
    "fieldname": "arktx",
    "fieldtype": "Data",
-   "label": "Material Description"
+   "label": "Material Description",
+   "read_only": 1
   },
   {
    "fieldname": "rate",
    "fieldtype": "Int",
-   "label": "Rate"
+   "label": "Rate",
+   "read_only": 1
   },
   {
    "fieldname": "sgst_p",
    "fieldtype": "Percent",
-   "label": "SGST %"
+   "label": "SGST %",
+   "read_only": 1
   },
   {
    "fieldname": "cgst_p",
    "fieldtype": "Percent",
-   "label": "CGST %"
+   "label": "CGST %",
+   "read_only": 1
   },
   {
    "fieldname": "igst_p",
    "fieldtype": "Percent",
-   "label": "IGST %"
+   "label": "IGST %",
+   "read_only": 1
   },
   {
    "fieldname": "tax_amt",
    "fieldtype": "Currency",
-   "label": "Taxable Amount"
+   "label": "Taxable Amount",
+   "read_only": 1
   },
   {
    "fieldname": "sgst",
    "fieldtype": "Currency",
-   "label": "SGST Amount"
+   "label": "SGST Amount",
+   "read_only": 1
   },
   {
    "fieldname": "cgst",
    "fieldtype": "Currency",
-   "label": "CGST Amount"
+   "label": "CGST Amount",
+   "read_only": 1
   },
   {
    "fieldname": "igst",
    "fieldtype": "Currency",
-   "label": "IGST Amount"
+   "label": "IGST Amount",
+   "read_only": 1
   },
   {
    "fieldname": "jtc1_amt",
    "fieldtype": "Currency",
-   "label": "JTC1 Amount"
+   "label": "JTC1 Amount",
+   "read_only": 1
   },
   {
    "fieldname": "jtc2_amt",
    "fieldtype": "Currency",
-   "label": "JTC2 Amount"
+   "label": "JTC2 Amount",
+   "read_only": 1
   },
   {
    "fieldname": "tcs",
    "fieldtype": "Currency",
-   "label": "TCS Amount"
+   "label": "TCS Amount",
+   "read_only": 1
   },
   {
    "fieldname": "round",
    "fieldtype": "Currency",
-   "label": "Round Off Amount"
+   "label": "Round Off Amount",
+   "read_only": 1
   },
   {
    "fieldname": "inv_amt",
    "fieldtype": "Currency",
-   "label": "Invoice Amount"
+   "label": "Invoice Amount",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_yiwr",
@@ -294,52 +330,62 @@
   {
    "fieldname": "zterm_t",
    "fieldtype": "Small Text",
-   "label": "Payment Term Description"
+   "label": "Payment Term Description",
+   "read_only": 1
   },
   {
    "fieldname": "alifnr",
    "fieldtype": "Data",
-   "label": "Commission Agent"
+   "label": "Commission Agent",
+   "read_only": 1
   },
   {
    "fieldname": "aname",
    "fieldtype": "Data",
-   "label": "Commission Agt Name"
+   "label": "Commission Agt Name",
+   "read_only": 1
   },
   {
    "fieldname": "bztxt",
    "fieldtype": "Data",
-   "label": "Sales District"
+   "label": "Sales District",
+   "read_only": 1
   },
   {
    "fieldname": "zzveh_reg_no",
    "fieldtype": "Data",
-   "label": "Truck No"
+   "label": "Truck No",
+   "read_only": 1
   },
   {
    "fieldname": "steuc",
    "fieldtype": "Data",
-   "label": "HSN Code"
+   "label": "HSN Code",
+   "read_only": 1
   },
   {
    "fieldname": "gstin",
    "fieldtype": "Data",
-   "label": "GSTIN"
+   "label": "GSTIN",
+   "read_only": 1
   },
   {
    "fieldname": "meins",
    "fieldtype": "Data",
-   "label": "UOM"
+   "label": "UOM",
+   "read_only": 1
   },
   {
    "fieldname": "base_amt",
    "fieldtype": "Currency",
-   "label": "Base Amount"
+   "label": "Base Amount",
+   "read_only": 1
   },
   {
    "fieldname": "tcs_base_amt",
    "fieldtype": "Data",
-   "label": "TCS Base Amount"
+   "label": "TCS Base Amount",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_ypir",
@@ -348,72 +394,86 @@
   {
    "fieldname": "sal_emp_code",
    "fieldtype": "Data",
-   "label": "Sales Employee Code"
+   "label": "Sales Employee Code",
+   "read_only": 1
   },
   {
    "fieldname": "sal_emp_name",
    "fieldtype": "Data",
-   "label": "Sales Employee Name"
+   "label": "Sales Employee Name",
+   "read_only": 1
   },
   {
    "fieldname": "cust_pri_g",
    "fieldtype": "Data",
-   "label": "Customer Price Group"
+   "label": "Customer Price Group",
+   "read_only": 1
   },
   {
    "fieldname": "inco1",
    "fieldtype": "Data",
-   "label": "INCOTERMS"
+   "label": "INCOTERMS",
+   "read_only": 1
   },
   {
    "fieldname": "inco2_l",
    "fieldtype": "Data",
-   "label": "INCOTERMS LOCATION 1"
+   "label": "INCOTERMS LOCATION 1",
+   "read_only": 1
   },
   {
    "fieldname": "cust_reco_ac",
    "fieldtype": "Data",
-   "label": "Customer Reco A/c"
+   "label": "Customer Reco A/c",
+   "read_only": 1
   },
   {
    "fieldname": "posnr",
    "fieldtype": "Data",
-   "label": "Line Item Number"
+   "label": "Line Item Number",
+   "read_only": 1
   },
   {
    "fieldname": "gjahr",
    "fieldtype": "Data",
-   "label": "Year"
+   "label": "Year",
+   "read_only": 1
   },
   {
    "fieldname": "waerk",
    "fieldtype": "Currency",
-   "label": "Currency"
+   "label": "Currency",
+   "read_only": 1
   },
   {
    "fieldname": "matkl",
    "fieldtype": "Data",
-   "label": "Material Group"
+   "label": "Material Group",
+   "read_only": 1
   },
   {
    "fieldname": "so_qty",
    "fieldtype": "Int",
-   "label": "Sales Order Qty"
+   "label": "Sales Order Qty",
+   "read_only": 1
   },
   {
    "fieldname": "bstnk",
    "fieldtype": "Data",
-   "label": "Customer PO No"
+   "label": "Customer PO No",
+   "read_only": 1
   },
   {
    "fieldname": "dis_per",
    "fieldtype": "Percent",
-   "label": "Discount %"
+   "label": "Discount %",
+   "read_only": 1
   },
   {
    "fieldname": "dis_amt",
    "fieldtype": "Currency",
-   "label": "Discount Amount"
+   "label": "Discount Amount",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_vcgf",
@@ -426,27 +486,32 @@
   {
    "fieldname": "zterm",
    "fieldtype": "Data",
-   "label": "Payment Term"
+   "label": "Payment Term",
+   "read_only": 1
   },
   {
    "fieldname": "sh_city",
    "fieldtype": "Data",
-   "label": "SH City"
+   "label": "SH City",
+   "read_only": 1
   },
   {
    "fieldname": "sh_gst_no",
    "fieldtype": "Data",
-   "label": "SH GST No"
+   "label": "SH GST No",
+   "read_only": 1
   },
   {
    "fieldname": "shp_reg",
    "fieldtype": "Data",
-   "label": "SHP Reg"
+   "label": "SHP Reg",
+   "read_only": 1
   },
   {
    "fieldname": "shp_reg_name",
    "fieldtype": "Data",
-   "label": "SHP Reg Name"
+   "label": "SHP Reg Name",
+   "read_only": 1
   },
   {
    "fieldname": "amended_from",
@@ -461,59 +526,69 @@
   {
    "fieldname": "erdat1",
    "fieldtype": "Data",
-   "label": "Sales Order Created On"
+   "label": "Sales Order Created On",
+   "read_only": 1
   },
   {
    "fieldname": "aname1",
    "fieldtype": "Data",
-   "label": "Del-Credere Agent"
+   "label": "Del-Credere Agent",
+   "read_only": 1
   },
   {
    "fieldname": "state_name1",
    "fieldtype": "Data",
-   "label": "State Name"
+   "label": "State Name",
+   "read_only": 1
   },
   {
    "fieldname": "state_name",
    "fieldtype": "Data",
-   "label": "State Code"
+   "label": "State Code",
+   "read_only": 1
   },
   {
    "fieldname": "city_name",
    "fieldtype": "Data",
-   "label": "City Name"
+   "label": "City Name",
+   "read_only": 1
   },
   {
    "fieldname": "prsdt",
    "fieldtype": "Date",
-   "label": "Pricing Date"
+   "label": "Pricing Date",
+   "read_only": 1
   },
   {
    "fieldname": "svkorg",
    "fieldtype": "Data",
-   "label": "Sales Organization"
+   "label": "Sales Organization",
+   "read_only": 1
   },
   {
    "fieldname": "sfkdat",
    "fieldtype": "Date",
-   "label": "Billing Date"
+   "label": "Billing Date",
+   "read_only": 1
   },
   {
    "fieldname": "disname",
    "fieldtype": "Data",
-   "label": "Distribution Channel Name"
+   "label": "Distribution Channel Name",
+   "read_only": 1
   },
   {
    "fieldname": "conqty",
    "fieldtype": "Int",
-   "label": "Contract (Sauda) Qty"
+   "label": "Contract (Sauda) Qty",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-03-17 15:14:02.479079",
+ "modified": "2026-04-01 11:48:10.747608",
  "modified_by": "Administrator",
  "module": "SAP App",
  "name": "SAP Sales Register",

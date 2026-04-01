@@ -20,6 +20,7 @@ class SAPIntegrationSettings(Document):
 
 	
 	def process_sap_data(self):
+		
 		"""Fetch and insert/update records in SAP Sales Register."""
 		records = self._fetch_records_from_sap()
 
@@ -71,6 +72,7 @@ class SAPIntegrationSettings(Document):
 
 	@frappe.whitelist()
 	def insert_process_sap_data(self):
+		
 		"""Fetch and insert/update records in SAP Sales Register."""
 		records = self.fetch_records_from_sap()
 
@@ -124,6 +126,7 @@ class SAPIntegrationSettings(Document):
 	
 
 	def fetch_records_from_sap(self):
+		
 		"""Fetch records from SAP using dynamic date range"""
 
 		# Convert string → date
@@ -169,7 +172,7 @@ class SAPIntegrationSettings(Document):
 		yesterday = datetime.today() - timedelta(days=1)
 		date_str = yesterday.strftime("%Y%m%d")
 
-		base_url = "https://s4hana2.amitmetaliks.com:1043/sap/opu/odata/sap/ZMIS_DO_SRV/ES_SALREG001Set"
+		base_url = "https://s4hana1.amitmetaliks.com:1043/sap/opu/odata/sap/ZMIS_DO_SRV/ES_SALREG001Set"
 
 		url = (
 			f"{base_url}?"
@@ -182,7 +185,7 @@ class SAPIntegrationSettings(Document):
 
 		response = requests.get(
 			url,
-			auth=HTTPBasicAuth(self.client_id, self.client_secret),
+			auth=HTTPBasicAuth(self.client_id, self.get_password("client_secret")),
 			verify=False
 		)
 
