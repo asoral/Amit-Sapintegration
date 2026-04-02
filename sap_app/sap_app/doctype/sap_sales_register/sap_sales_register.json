@@ -25,69 +25,69 @@
   "fkdat",
   "section_break_kgyr",
   "vgbel",
-  "del_date",
+  "deldate",
   "zuonr",
-  "ref_odn",
+  "refodn",
   "kunag",
-  "sp_name",
-  "sh_code",
-  "sh_name",
+  "spname",
+  "shcode",
+  "shname",
   "fkimg",
   "matnr",
   "arktx",
   "column_break_vpsl",
   "rate",
-  "sgst_p",
-  "cgst_p",
+  "sgstp",
+  "cgstp",
   "igst_p",
-  "tax_amt",
+  "taxamt",
   "sgst",
   "cgst",
   "igst",
-  "jtc1_amt",
-  "jtc2_amt",
+  "jtc1amt",
+  "jtc2amt",
   "tcs",
   "round",
-  "inv_amt",
+  "invamt",
   "section_break_yiwr",
-  "zterm_t",
+  "ztermt",
   "alifnr",
   "aname",
   "bztxt",
-  "zzveh_reg_no",
+  "zzvehregno",
   "steuc",
   "gstin",
   "meins",
-  "base_amt",
-  "tcs_base_amt",
+  "baseamt",
+  "tcsbaseamt",
   "column_break_ypir",
-  "sal_emp_code",
-  "sal_emp_name",
-  "cust_pri_g",
+  "salempcode",
+  "salempname",
+  "custprig",
   "inco1",
-  "inco2_l",
-  "cust_reco_ac",
+  "inco2l",
+  "custrecoac",
   "posnr",
   "gjahr",
   "waerk",
   "matkl",
-  "so_qty",
+  "soqty",
   "bstnk",
-  "dis_per",
-  "dis_amt",
+  "disper",
+  "disamt",
   "section_break_vcgf",
   "zterm",
-  "sh_city",
-  "sh_gst_no",
-  "shp_reg",
-  "shp_reg_name",
+  "shcity",
+  "shgstno",
+  "shpreg",
+  "shpregname",
   "erdat1",
   "aname1",
   "column_break_mrwe",
   "amended_from",
-  "state_name1",
-  "state_name",
-  "city_name",
+  "statename1",
+  "statename",
+  "cityname",
   "prsdt"
  ],
  "fields": [
@@ -182,45 +182,15 @@
    "read_only": 1
   },
   {
-   "fieldname": "del_date",
-   "fieldtype": "Date",
-   "label": "Delivery Date",
-   "read_only": 1
-  },
-  {
    "fieldname": "zuonr",
    "fieldtype": "Data",
    "label": "Ref Inv No",
    "read_only": 1
   },
   {
-   "fieldname": "ref_odn",
-   "fieldtype": "Data",
-   "label": "Ref Inv ODN No",
-   "read_only": 1
-  },
-  {
    "fieldname": "kunag",
    "fieldtype": "Data",
    "label": "Sold-to-Party Code",
-   "read_only": 1
-  },
-  {
-   "fieldname": "sp_name",
-   "fieldtype": "Data",
-   "label": "Sold-to-Party Name",
-   "read_only": 1
-  },
-  {
-   "fieldname": "sh_code",
-   "fieldtype": "Data",
-   "label": "Ship-to-Party Code",
-   "read_only": 1
-  },
-  {
-   "fieldname": "sh_name",
-   "fieldtype": "Data",
-   "label": "Ship-to-Party Name",
    "read_only": 1
   },
   {
@@ -252,27 +222,9 @@
    "read_only": 1
   },
   {
-   "fieldname": "sgst_p",
-   "fieldtype": "Percent",
-   "label": "SGST %",
-   "read_only": 1
-  },
-  {
-   "fieldname": "cgst_p",
-   "fieldtype": "Percent",
-   "label": "CGST %",
-   "read_only": 1
-  },
-  {
    "fieldname": "igst_p",
    "fieldtype": "Percent",
    "label": "IGST %",
-   "read_only": 1
-  },
-  {
-   "fieldname": "tax_amt",
-   "fieldtype": "Currency",
-   "label": "Taxable Amount",
    "read_only": 1
   },
   {
@@ -294,18 +246,6 @@
    "read_only": 1
   },
   {
-   "fieldname": "jtc1_amt",
-   "fieldtype": "Currency",
-   "label": "JTC1 Amount",
-   "read_only": 1
-  },
-  {
-   "fieldname": "jtc2_amt",
-   "fieldtype": "Currency",
-   "label": "JTC2 Amount",
-   "read_only": 1
-  },
-  {
    "fieldname": "tcs",
    "fieldtype": "Currency",
    "label": "TCS Amount",
@@ -318,20 +258,8 @@
    "read_only": 1
   },
   {
-   "fieldname": "inv_amt",
-   "fieldtype": "Currency",
-   "label": "Invoice Amount",
-   "read_only": 1
-  },
-  {
    "fieldname": "section_break_yiwr",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "zterm_t",
-   "fieldtype": "Small Text",
-   "label": "Payment Term Description",
-   "read_only": 1
   },
   {
    "fieldname": "alifnr",
@@ -349,12 +277,6 @@
    "fieldname": "bztxt",
    "fieldtype": "Data",
    "label": "Sales District",
-   "read_only": 1
-  },
-  {
-   "fieldname": "zzveh_reg_no",
-   "fieldtype": "Data",
-   "label": "Truck No",
    "read_only": 1
   },
   {
@@ -376,55 +298,13 @@
    "read_only": 1
   },
   {
-   "fieldname": "base_amt",
-   "fieldtype": "Currency",
-   "label": "Base Amount",
-   "read_only": 1
-  },
-  {
-   "fieldname": "tcs_base_amt",
-   "fieldtype": "Data",
-   "label": "TCS Base Amount",
-   "read_only": 1
-  },
-  {
    "fieldname": "column_break_ypir",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "sal_emp_code",
-   "fieldtype": "Data",
-   "label": "Sales Employee Code",
-   "read_only": 1
-  },
-  {
-   "fieldname": "sal_emp_name",
-   "fieldtype": "Data",
-   "label": "Sales Employee Name",
-   "read_only": 1
-  },
-  {
-   "fieldname": "cust_pri_g",
-   "fieldtype": "Data",
-   "label": "Customer Price Group",
-   "read_only": 1
   },
   {
    "fieldname": "inco1",
    "fieldtype": "Data",
    "label": "INCOTERMS",
-   "read_only": 1
-  },
-  {
-   "fieldname": "inco2_l",
-   "fieldtype": "Data",
-   "label": "INCOTERMS LOCATION 1",
-   "read_only": 1
-  },
-  {
-   "fieldname": "cust_reco_ac",
-   "fieldtype": "Data",
-   "label": "Customer Reco A/c",
    "read_only": 1
   },
   {
@@ -452,27 +332,9 @@
    "read_only": 1
   },
   {
-   "fieldname": "so_qty",
-   "fieldtype": "Int",
-   "label": "Sales Order Qty",
-   "read_only": 1
-  },
-  {
    "fieldname": "bstnk",
    "fieldtype": "Data",
    "label": "Customer PO No",
-   "read_only": 1
-  },
-  {
-   "fieldname": "dis_per",
-   "fieldtype": "Percent",
-   "label": "Discount %",
-   "read_only": 1
-  },
-  {
-   "fieldname": "dis_amt",
-   "fieldtype": "Currency",
-   "label": "Discount Amount",
    "read_only": 1
   },
   {
@@ -487,30 +349,6 @@
    "fieldname": "zterm",
    "fieldtype": "Data",
    "label": "Payment Term",
-   "read_only": 1
-  },
-  {
-   "fieldname": "sh_city",
-   "fieldtype": "Data",
-   "label": "SH City",
-   "read_only": 1
-  },
-  {
-   "fieldname": "sh_gst_no",
-   "fieldtype": "Data",
-   "label": "SH GST No",
-   "read_only": 1
-  },
-  {
-   "fieldname": "shp_reg",
-   "fieldtype": "Data",
-   "label": "SHP Reg",
-   "read_only": 1
-  },
-  {
-   "fieldname": "shp_reg_name",
-   "fieldtype": "Data",
-   "label": "SHP Reg Name",
    "read_only": 1
   },
   {
@@ -533,24 +371,6 @@
    "fieldname": "aname1",
    "fieldtype": "Data",
    "label": "Del-Credere Agent",
-   "read_only": 1
-  },
-  {
-   "fieldname": "state_name1",
-   "fieldtype": "Data",
-   "label": "State Name",
-   "read_only": 1
-  },
-  {
-   "fieldname": "state_name",
-   "fieldtype": "Data",
-   "label": "State Code",
-   "read_only": 1
-  },
-  {
-   "fieldname": "city_name",
-   "fieldtype": "Data",
-   "label": "City Name",
    "read_only": 1
   },
   {
@@ -582,13 +402,193 @@
    "fieldtype": "Int",
    "label": "Contract (Sauda) Qty",
    "read_only": 1
+  },
+  {
+   "fieldname": "shname",
+   "fieldtype": "Data",
+   "label": "Ship-to-Party Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sgstp",
+   "fieldtype": "Percent",
+   "label": "SGST %",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cgstp",
+   "fieldtype": "Percent",
+   "label": "CGST %",
+   "read_only": 1
+  },
+  {
+   "fieldname": "deldate",
+   "fieldtype": "Date",
+   "label": "Delivery Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "refodn",
+   "fieldtype": "Data",
+   "label": "Ref Inv ODN No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "spname",
+   "fieldtype": "Data",
+   "label": "Sold-to-Party Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shcode",
+   "fieldtype": "Data",
+   "label": "Ship-to-Party Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "jtc1amt",
+   "fieldtype": "Currency",
+   "label": "JTC1 Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "jtc2amt",
+   "fieldtype": "Currency",
+   "label": "JTC2 Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invamt",
+   "fieldtype": "Currency",
+   "label": "Invoice Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "taxamt",
+   "fieldtype": "Currency",
+   "label": "Taxable Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ztermt",
+   "fieldtype": "Small Text",
+   "label": "Payment Term Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "zzvehregno",
+   "fieldtype": "Data",
+   "label": "Truck No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "baseamt",
+   "fieldtype": "Currency",
+   "label": "Base Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tcsbaseamt",
+   "fieldtype": "Data",
+   "label": "TCS Base Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "salempcode",
+   "fieldtype": "Data",
+   "label": "Sales Employee Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "salempname",
+   "fieldtype": "Data",
+   "label": "Sales Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "custprig",
+   "fieldtype": "Data",
+   "label": "Customer Price Group",
+   "read_only": 1
+  },
+  {
+   "fieldname": "inco2l",
+   "fieldtype": "Data",
+   "label": "INCOTERMS LOCATION 1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "custrecoac",
+   "fieldtype": "Data",
+   "label": "Customer Reco A/c",
+   "read_only": 1
+  },
+  {
+   "fieldname": "soqty",
+   "fieldtype": "Int",
+   "label": "Sales Order Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "disper",
+   "fieldtype": "Percent",
+   "label": "Discount %",
+   "read_only": 1
+  },
+  {
+   "fieldname": "disamt",
+   "fieldtype": "Currency",
+   "label": "Discount Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shcity",
+   "fieldtype": "Data",
+   "label": "SH City",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shgstno",
+   "fieldtype": "Data",
+   "label": "SH GST No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shpreg",
+   "fieldtype": "Data",
+   "label": "SHP Reg",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shpregname",
+   "fieldtype": "Data",
+   "label": "SHP Reg Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "statename1",
+   "fieldtype": "Data",
+   "label": "State Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "statename",
+   "fieldtype": "Data",
+   "label": "State Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cityname",
+   "fieldtype": "Data",
+   "label": "City Name",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-04-01 11:48:10.747608",
+ "modified": "2026-04-02 15:53:02.668970",
  "modified_by": "Administrator",
  "module": "SAP App",
  "name": "SAP Sales Register",
