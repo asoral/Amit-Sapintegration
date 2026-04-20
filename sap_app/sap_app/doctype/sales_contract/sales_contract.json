@@ -1,0 +1,207 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:sales_contract",
+ "creation": "2026-04-15 17:25:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_basic",
+  "sales_contract",
+  "sales_contract_type",
+  "column_break_basic",
+  "sales_organization",
+  "distribution_channel",
+  "organization_division",
+  "section_break_customer",
+  "sold_to_party",
+  "purchase_order_by_customer",
+  "column_break_customer",
+  "customer_purchase_order_type",
+  "customer_purchase_order_date",
+  "section_break_dates",
+  "sales_contract_date",
+  "pricing_date",
+  "column_break_dates",
+  "sales_contract_validity_start_date",
+  "sales_contract_validity_end_date",
+  "section_break_sync",
+  "is_synced",
+  "sap_sync_status",
+  "section_break_tables",
+  "to_item",
+  "to_partner",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_basic",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "sales_contract",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sales Contract ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "sales_contract_type",
+   "fieldtype": "Data",
+   "label": "Sales Contract Type"
+  },
+  {
+   "fieldname": "column_break_basic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_organization",
+   "fieldtype": "Data",
+   "label": "Sales Organization"
+  },
+  {
+   "fieldname": "distribution_channel",
+   "fieldtype": "Data",
+   "label": "Distribution Channel"
+  },
+  {
+   "fieldname": "organization_division",
+   "fieldtype": "Data",
+   "label": "Organization Division"
+  },
+  {
+   "fieldname": "section_break_customer",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "sold_to_party",
+   "fieldtype": "Data",
+   "label": "Sold-to Party",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purchase_order_by_customer",
+   "fieldtype": "Data",
+   "label": "Purchase Order by Customer"
+  },
+  {
+   "fieldname": "column_break_customer",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_purchase_order_type",
+   "fieldtype": "Data",
+   "label": "Customer Purchase Order Type"
+  },
+  {
+   "fieldname": "customer_purchase_order_date",
+   "fieldtype": "Date",
+   "label": "Customer Purchase Order Date"
+  },
+  {
+   "fieldname": "section_break_dates",
+   "fieldtype": "Section Break",
+   "label": "Dates"
+  },
+  {
+   "fieldname": "sales_contract_date",
+   "fieldtype": "Datetime",
+   "label": "Sales Contract Date"
+  },
+  {
+   "fieldname": "pricing_date",
+   "fieldtype": "Datetime",
+   "label": "Pricing Date"
+  },
+  {
+   "fieldname": "column_break_dates",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_contract_validity_start_date",
+   "fieldtype": "Date",
+   "label": "Validity Start Date"
+  },
+  {
+   "fieldname": "sales_contract_validity_end_date",
+   "fieldtype": "Date",
+   "label": "Validity End Date"
+  },
+  {
+   "fieldname": "section_break_sync",
+   "fieldtype": "Section Break",
+   "label": "Sync Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_synced",
+   "fieldtype": "Check",
+   "label": "Is Synced",
+   "read_only": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "sap_sync_status",
+   "fieldtype": "Select",
+   "label": "SAP Sync Status",
+   "options": "Draft\nSynced\nFailed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_tables",
+   "fieldtype": "Section Break",
+   "label": "Tables"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sales Contract",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_item",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Sales Contract Item"
+  },
+  {
+   "fieldname": "to_partner",
+   "fieldtype": "Table",
+   "label": "Partners",
+   "options": "Sales Contract Partner"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-20 11:50:36.247209",
+ "modified_by": "Administrator",
+ "module": "SAP App",
+ "name": "Sales Contract",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

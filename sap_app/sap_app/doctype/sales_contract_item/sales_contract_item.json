@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-15 17:20:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sales_contract_item",
+  "item_code",
+  "production_plant",
+  "column_break_1",
+  "qty",
+  "uom",
+  "section_break_vqgm",
+  "pricing_elements_html"
+ ],
+ "fields": [
+  {
+   "fieldname": "sales_contract_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Position",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "sales_contract_item.item_name",
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Material"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Requested Quantity"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Requested Quantity Unit",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "production_plant",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Production Plant"
+  },
+  {
+   "fieldname": "pricing_elements_html",
+   "fieldtype": "HTML",
+   "label": "Pricing Elements"
+  },
+  {
+   "fieldname": "section_break_vqgm",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-20 11:23:32.028825",
+ "modified_by": "Administrator",
+ "module": "SAP App",
+ "name": "Sales Contract Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

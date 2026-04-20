@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-17 12:28:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "condition_type",
+  "condition_rate_value",
+  "condition_currency",
+  "column_break_1",
+  "condition_quantity",
+  "condition_quantity_unit"
+ ],
+ "fields": [
+  {
+   "fieldname": "condition_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Condition Type"
+  },
+  {
+   "fieldname": "condition_rate_value",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Condition Rate Value"
+  },
+  {
+   "fieldname": "condition_currency",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Condition Currency"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "condition_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Condition Quantity"
+  },
+  {
+   "fieldname": "condition_quantity_unit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Condition Quantity Unit"
+  }
+ ],
+ "grid_page_length": 50,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-17 12:50:24.437101",
+ "modified_by": "Administrator",
+ "module": "SAP App",
+ "name": "Sales Contract Pricing Element",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
