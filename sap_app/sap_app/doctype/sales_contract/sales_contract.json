@@ -28,6 +28,7 @@
   "section_break_sync",
   "is_synced",
   "sap_sync_status",
+  "sap_response",
   "section_break_tables",
   "to_item",
   "to_partner",
@@ -175,12 +176,17 @@
    "fieldtype": "Table",
    "label": "Partners",
    "options": "Sales Contract Partner"
+  },
+  {
+   "fieldname": "sap_response",
+   "fieldtype": "Long Text",
+   "label": "Sap Response"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-04-20 11:50:36.247209",
+ "modified": "2026-05-18 12:21:54.877180",
  "modified_by": "Administrator",
  "module": "SAP App",
  "name": "Sales Contract",

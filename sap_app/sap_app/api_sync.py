@@ -117,9 +117,10 @@ def sync_sales_contracts_to_sap(docname=None):
 			
 			# Map Pricing Elements from JSON text field
 			pricing_elements = []
-			if item.pricing_elements_json:
+			pricing_json = getattr(item, "pricing_elements_json", None)
+			if pricing_json:
 				try:
-					parsed_pe = json.loads(item.pricing_elements_json)
+					parsed_pe = json.loads(pricing_json)
 					if isinstance(parsed_pe, list):
 						for pe in parsed_pe:
 							pricing_elements.append({
@@ -139,7 +140,7 @@ def sync_sales_contracts_to_sap(docname=None):
 							"ConditionQuantityUnit": pe.get("ConditionQuantityUnit")
 						})
 				except Exception as e:
-					frappe.log_error(title="SAP Sync JSON Parse Error", message=f"Error parsing pricing elements for item {item.name}:\n{str(e)}\nData:\n{item.pricing_elements_json}")
+					frappe.log_error(title="SAP Sync JSON Parse Error", message=f"Error parsing pricing elements for item {item.name}:\n{str(e)}\nData:\n{pricing_json}")
 			
 			# Only add to_PricingElement if there are pricing rows
 			if pricing_elements:
