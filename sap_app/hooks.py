@@ -153,7 +153,7 @@ scheduler_events = {
      "cron": {
 		"0 0 * * *": [
 			"sap_app.sap_app.doctype.sap_integration_settings.sap_integration_settings.run_sap_sync",                           
-			"sap_app.sap_app.api_sync.sync_sales_contracts_to_sap"
+			# "sap_app.sap_app.api_sync.sync_sales_contracts_to_sap"
 		]
 	},
 	
@@ -163,9 +163,9 @@ scheduler_events = {
 # 	"daily": [
 # 		"sap_app.tasks.daily"
 # 	],
-# 	"hourly": [
-# 		"sap_app.tasks.hourly"
-# 	],
+	"hourly": [
+		"sap_app.sap_app.sales_contract_api.sync_sales_contracts_to_sap"
+	]
 # 	"weekly": [
 # 		"sap_app.tasks.weekly"
 # 	],
