@@ -239,7 +239,7 @@ def sync_sales_contracts_to_sap():
                     "RequestedQuantityUnit": str(item.stock_uom or item.uom or "MT"),
                     "to_PricingElement": [
                         {
-                            "ConditionType": "ZCNQ",
+                            "ConditionType": "ZPR0",
                             "ConditionRateValue": str(item.rate),
                             "ConditionCurrency": str(doc.currency or "INR"),
                             "ConditionQuantity": "1",
