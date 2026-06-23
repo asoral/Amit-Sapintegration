@@ -1,0 +1,217 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:payment_id",
+ "creation": "2026-06-23 13:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_basic",
+  "payment_id",
+  "bukrs",
+  "belnr",
+  "gjahr",
+  "buzei",
+  "column_break_basic",
+  "kunnr",
+  "name1",
+  "vbel2",
+  "sales_order",
+  "vertn",
+  "section_break_financial",
+  "dmbtr",
+  "cust_bal",
+  "waers",
+  "column_break_financial",
+  "bldat",
+  "budat",
+  "prctr",
+  "section_break_other",
+  "blart",
+  "vorgn",
+  "koart",
+  "shkzg"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_basic",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "payment_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Payment ID",
+   "read_only": 1,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "bukrs",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "belnr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SAP Document Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gjahr",
+   "fieldtype": "Data",
+   "label": "Fiscal Year",
+   "read_only": 1
+  },
+  {
+   "fieldname": "buzei",
+   "fieldtype": "Data",
+   "label": "Posting Key Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_basic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kunnr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vbel2",
+   "fieldtype": "Data",
+   "label": "SAP Reference Doc (VBEL2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vertn",
+   "fieldtype": "Data",
+   "label": "Contract Number (VERTN)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_financial",
+   "fieldtype": "Section Break",
+   "label": "Financial Details"
+  },
+  {
+   "fieldname": "dmbtr",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cust_bal",
+   "fieldtype": "Currency",
+   "label": "Customer Balance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "waers",
+   "fieldtype": "Data",
+   "label": "Currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_financial",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bldat",
+   "fieldtype": "Date",
+   "label": "Document Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "budat",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prctr",
+   "fieldtype": "Data",
+   "label": "Profit Center",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_other",
+   "fieldtype": "Section Break",
+   "label": "Other Details"
+  },
+  {
+   "fieldname": "blart",
+   "fieldtype": "Data",
+   "label": "Document Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vorgn",
+   "fieldtype": "Data",
+   "label": "Transaction Activity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "koart",
+   "fieldtype": "Data",
+   "label": "Account Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shkzg",
+   "fieldtype": "Data",
+   "label": "Debit/Credit Indicator",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-23 13:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "SAP App",
+ "name": "SAP Payment",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 0,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 0
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

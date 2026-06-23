@@ -152,8 +152,8 @@ scheduler_events = {
 
      "cron": {
 		"0 7 * * *": [
-			"sap_app.sap_app.doctype.sap_integration_settings.sap_integration_settings.run_sap_sync",                           
-			# "sap_app.sap_app.api_sync.sync_sales_contracts_to_sap"
+			"sap_app.sap_app.doctype.sap_integration_settings.sap_integration_settings.run_sap_sync",
+			"sap_app.sap_app.doctype.sap_integration_settings.sap_integration_settings.run_sap_payment_sync"
 		]
 	},
 	
