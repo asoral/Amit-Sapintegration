@@ -29,6 +29,49 @@ def parse_sap_amount(val):
 		return 0.0
 
 
+def recalculate_gst_if_zero(doc_dict):
+	"""
+	When SAP sends sgst/cgst/igst as 0 but the record has a non-zero rate and
+	tax percentages (sgstp/cgstp/igst_p), recalculate the amounts.
+	This typically happens for cancellation/credit invoices (e.g. fkart=ZCAN)
+	where the qty is negative (e.g. '27.760-') but SAP sends all amounts as 0.
+	"""
+	sgst = parse_sap_amount(doc_dict.get("sgst", 0))
+	cgst = parse_sap_amount(doc_dict.get("cgst", 0))
+	igst = parse_sap_amount(doc_dict.get("igst", 0))
+	baseamt = parse_sap_amount(doc_dict.get("baseamt", 0))
+	taxamt = parse_sap_amount(doc_dict.get("taxamt", 0))
+	invamt = parse_sap_amount(doc_dict.get("invamt", 0))
+
+	# Only recalculate if SAP sent all monetary amounts as zero
+	if sgst == 0 and cgst == 0 and igst == 0 and baseamt == 0 and taxamt == 0:
+		rate = parse_sap_amount(doc_dict.get("rate", 0))
+		fkimg_raw = str(doc_dict.get("fkimg", "0"))
+		qty = parse_sap_amount(fkimg_raw)
+
+		if rate and qty:
+			sgstp = parse_sap_amount(doc_dict.get("sgstp", 0))
+			cgstp = parse_sap_amount(doc_dict.get("cgstp", 0))
+			igst_p = parse_sap_amount(doc_dict.get("igst_p", 0))
+			tcs_pct = parse_sap_amount(doc_dict.get("tcs", 0))  # tcs field may hold % or amount
+
+			base = round(rate * qty, 2)
+			sgst_amt = round(base * sgstp / 100, 2)
+			cgst_amt = round(base * cgstp / 100, 2)
+			igst_amt = round(base * igst_p / 100, 2)
+			tax = round(sgst_amt + cgst_amt + igst_amt, 2)
+			total = round(base + tax, 2)
+
+			doc_dict["baseamt"] = base
+			doc_dict["taxamt"] = tax
+			doc_dict["sgst"] = sgst_amt
+			doc_dict["cgst"] = cgst_amt
+			doc_dict["igst"] = igst_amt
+			doc_dict["invamt"] = total
+
+	return doc_dict
+
+
 def parse_sap_date(val):
 	"""Parse YYYYMMDD string format from SAP to YYYY-MM-DD format."""
 	if not val:
@@ -90,6 +133,9 @@ class SAPIntegrationSettings(Document):
 				if lower_key in valid_fields:
 					doc_dict[lower_key] = value
 
+			# Recalculate GST amounts if SAP sent them as zero (credit/cancel invoices)
+			doc_dict = recalculate_gst_if_zero(doc_dict)
+
 			if doc_name:
 				doc = frappe.get_doc("SAP Sales Register", doc_name)
 				doc.update(doc_dict)
@@ -140,6 +186,9 @@ class SAPIntegrationSettings(Document):
 				lower_key = key.lower()
 				if lower_key in valid_fields:
 					doc_dict[lower_key] = value
+
+			# Recalculate GST amounts if SAP sent them as zero (credit/cancel invoices)
+			doc_dict = recalculate_gst_if_zero(doc_dict)
 
 			if doc_name:
 				doc = frappe.get_doc("SAP Sales Register", doc_name)
